@@ -1,0 +1,10 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{validate}=require('../domain.js');
+const a={id:'1',date:'2026-10-05',time:'09:00',service:'Consulta',professional:'g',status:'confirmado'};
+test('bloqueia sobreposição do mesmo profissional',()=>assert.match(validate({...a,id:'2',time:'09:15'},[a]),/intervalo/));
+test('permite horários adjacentes',()=>assert.equal(validate({...a,id:'2',time:'09:30'},[a]),''));
+test('permite profissionais diferentes',()=>assert.equal(validate({...a,id:'2',professional:'c'},[a]),''));
+test('cancelamento libera o horário',()=>assert.equal(validate({...a,id:'2'},[{...a,status:'cancelado'}]),''));
+test('edição não conflita consigo mesma',()=>assert.equal(validate(a,[a]),''));
+test('bloqueia serviço incompatível com profissional',()=>assert.match(validate({...a,service:'Banho'},[]),/compatível/));
+test('bloqueia atendimento que termina após expediente',()=>assert.match(validate({...a,time:'17:45'},[]),/18h/));
+test('cancelamento pode ser salvo sem bloquear outro registro',()=>assert.equal(validate({...a,id:'2',status:'cancelado'},[a]),''));
