@@ -2,6 +2,8 @@
 
 Sistema web responsivo desenvolvido para o Estudo de Caso 5 da disciplina Design Profissional. O protótipo reúne agenda, tutores, pets e histórico para reduzir conflitos de horários e facilitar o acompanhamento dos atendimentos.
 
+[Abrir aplicação publicada](https://paulogeandre.github.io/petvida-clinica/) · [Repositório do projeto](https://github.com/paulogeandre/petvida-clinica)
+
 ## Problema e solução
 
 A clínica controla consultas e serviços de estética em uma agenda de papel e procura históricos em arquivos físicos. O crescimento da demanda gera sobreposição de horários, faltas e demora na recepção. A proposta é centralizar esses registros em uma interface operacional simples.
@@ -44,6 +46,7 @@ As capturas abaixo foram obtidas da aplicação funcionando durante a verificaç
 Requisito: Node.js 18 ou superior. Não é necessário instalar pacotes.
 
 ```sh
+git clone https://github.com/paulogeandre/petvida-clinica.git
 cd petvida-clinica
 npm start
 ```
@@ -93,7 +96,7 @@ Para uso real, a evolução prevista inclui autenticação por função, banco d
 
 ## Publicação no GitHub
 
-O projeto inclui o fluxo `.github/workflows/pages.yml`, que publica os arquivos públicos no GitHub Pages em pushes para `main` ou por execução manual. Crie o repositório `petvida-clinica`, envie o conteúdo desta pasta para a raiz e selecione **GitHub Actions** em **Settings → Pages → Build and deployment**. A execução deve terminar com sucesso antes de considerar a publicação concluída. O endereço final será fornecido pelo GitHub Pages; não há URL pública confirmada neste pacote local.
+O repositório público é [paulogeandre/petvida-clinica](https://github.com/paulogeandre/petvida-clinica). O projeto inclui o fluxo `.github/workflows/pages.yml`, que executa os testes e publica os arquivos públicos no GitHub Pages em pushes para `main` ou por execução manual. A fonte de publicação foi configurada como **GitHub Actions** em **Settings → Pages → Build and deployment**. O resultado das execuções pode ser consultado na [página de Actions](https://github.com/paulogeandre/petvida-clinica/actions).
 
 Se preferir publicar manualmente, os arquivos necessários são `index.html`, `styles.css`, `app.js`, `domain.js` e `favicon.svg`. Não há etapa de build.
 
