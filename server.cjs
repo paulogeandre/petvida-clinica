@@ -1,0 +1,3 @@
+const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const root=__dirname,files={'/':'index.html','/index.html':'index.html','/styles.css':'styles.css','/app.js':'app.js','/domain.js':'domain.js','/favicon.svg':'favicon.svg'};
+http.createServer((req,res)=>{const name=files[new URL(req.url,'http://localhost').pathname];if(!name){res.writeHead(404);res.end('Não encontrado');return}const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml'};res.setHeader('Content-Type',mime[path.extname(name)]);fs.createReadStream(path.join(root,name)).pipe(res)}).listen(4173,'127.0.0.1',()=>console.log('PetVida disponível em http://127.0.0.1:4173'));
