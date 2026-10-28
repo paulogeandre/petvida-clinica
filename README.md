@@ -1,6 +1,6 @@
 # PetVida Clínica e Estética Animal
 
-Sistema web responsivo desenvolvido para o Estudo de Caso 5 da disciplina Design Profissional. O protótipo reúne agenda, tutores, pets e histórico para reduzir conflitos de horários e facilitar o acompanhamento dos atendimentos.
+Sistema web responsivo desenvolvido para  disciplina Design Profissional. O protótipo reúne agenda, tutores, pets e histórico para reduzir conflitos de horários e facilitar o acompanhamento dos atendimentos.
 
 [Abrir aplicação publicada](https://paulogeandre.github.io/petvida-clinica/) · [Repositório do projeto](https://github.com/paulogeandre/petvida-clinica)
 
@@ -105,8 +105,6 @@ Se preferir publicar manualmente, os arquivos necessários são `index.html`, `s
 - [Briefing](docs/briefing.md)
 - [Mapa de telas](docs/mapa-de-telas.md)
 - [Roteiro de apresentação](docs/roteiro-de-apresentacao.md)
-
-Fonte do caso: Estudo de Caso 5 Clínica PetVida e Estética Animal, fornecido na atividade. Prazo informado no enunciado: 05/10/2026 às 23h59.
 
 ## Licença
 
