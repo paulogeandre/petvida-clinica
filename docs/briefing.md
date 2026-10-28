@@ -62,10 +62,4 @@ A primeira versão deve usar dados fictícios. Se usar armazenamento local no na
 - O README explica o problema, a decisão de design, as telas, a arquitetura, a execução e as limitações.
 - O repositório contém .gitignore e LICENSE, sem credenciais ou dados pessoais reais.
 
-## Entrega acadêmica
 
-Nome proposto do repositório: petvida-clinica.
-
-O enunciado informa prazo em 5 de outubro de 2026 às 23h59 e atribui 1,0 ponto à resolução da dor, decisão de design e protótipo, e 1,0 ponto à estrutura profissional do repositório. A entrega deve incluir o link do GitHub e uma aplicação executável, com instruções claras de acesso e execução.
-
-Fonte: Estudo de Caso 5 Clínica PetVida e Estética Animal, fornecido pelo usuário.
